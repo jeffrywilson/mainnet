@@ -1,0 +1,122 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer utilities {
+  .text-center {
+    text-align: center !important;
+  }
+  li.active {
+    -webkit-text-stroke: 0.2px gray;
+  }
+  @font-face {
+    font-display: block;
+    font-family: "Outline Pixel7 Solid";
+    src: local("Outline Pixel7 Solid"),
+      url("/assets/fonts/outline_pixel-7_solid.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-display: block;
+    font-family: "Small Pixel7";
+    src: local("Small Pixel7"),
+      url("/assets/fonts/small_pixel-7.ttf") format("truetype");
+  }
+
+  .s3-stroke-0_5 {
+    -webkit-text-stroke: 0.5px #795440;
+  }
+
+  .s3-stroke-1 {
+    -webkit-text-stroke: 1px #795440;
+  }
+
+  .s3-stroke-black-1 {
+    -webkit-text-stroke: 1px #000;
+  }
+  .s3-stroke-1_5 {
+    -webkit-text-stroke: 1.5px #795440;
+  }
+
+  .s3-stroke-2 {
+    -webkit-text-stroke: 2px #795440;
+  }
+
+  .s3-text-normal {
+    @apply font-smpx text-[14px] tablet1:text-[24px] leading-3 tablet1:leading-6;
+  }
+
+  .s3-text-welcome-description {
+    @apply font-smpx text-center text-[24px] tablet1:text-[44px]
+      mx-auto 
+      s3-stroke-0_5 tablet1:s3-stroke-1 leading-[20px] tablet1:leading-[48px];
+  }
+
+  .s3-text-sectiontitle {
+    @apply font-outpxd text-[24px] tablet1:text-[42px] s3-stroke-1 tablet1:s3-stroke-2 leading-8 tablet1:leading-10;
+  }
+
+  .custom-select {
+    position: relative;
+  }
+
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    @apply top-[10px] tablet1:top-[14px];
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    @apply top-[4px] tablet1:top-[7px];
+  }
+
+  /*style the items (options), including the selected item:*/
+  .select-items div,
+  .select-selected {
+    color: black;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+    @apply px-3;
+  }
+
+  .select-selected {
+    color: white;
+    @apply bg-coinselect bg-cover bg-repeat-round w-[90px] items-center text-left h-full;
+  }
+
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: #dfccb7;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+
+  .select-items div:hover,
+  .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
