@@ -256,15 +256,15 @@
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 0rem 1rem;
   cursor: pointer;
   margin: 0 1px;
   outline: none;
   background-color: transparent;
   transition: border 0.2s ease-in-out 0s;
   font-weight: 100;
-  font-family: "Outline Pixel7 Solid";
-  font-size: x-large;
+  font-family: 'Small Pixel7';
+  font-size: xx-large;
 }
 
 .tabs-component [role="tablist"] button:first-child {
@@ -280,11 +280,11 @@
 .tabs-component [role="tablist"] button.active,
 .tabs-component [role="tablist"] button:focus,
 .tabs-component [role="tablist"] button:hover {
-  font-weight: bold;
+  text-shadow: rgb(152 125 23) 0px 1px, rgb(152 125 23) 0px 2px, rgb(119 90 44) 0px 3px;
 }
 
 .tabs-component [role="tablist"] button.active {
-  font-weight: bold;
+  text-shadow: rgb(152 125 23) 0px 1px, rgb(152 125 23) 0px 2px, rgb(119 90 44) 0px 3px;
 }
 
 .tabs-component [role="tabpanel"] {

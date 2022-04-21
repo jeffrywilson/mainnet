@@ -14,17 +14,17 @@ type TabsType = {
 // Tabs Array
 const tabs: TabsType = [
   {
-    label: "LENDING",
+    label: "Lend",
     index: 1,
     Component: Lending
   },
   {
-    label: "STAKE",
+    label: "Stake",
     index: 2,
     Component: Stake
   },
   {
-    label: "BOND",
+    label: "Bond",
     index: 3,
     Component: Bond
   }
