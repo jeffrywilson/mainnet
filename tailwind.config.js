@@ -71,6 +71,7 @@ module.exports = {
         presaleendtime: "url('/assets/images/presaleendtime.png')",
         availableamount: "url('/assets/images/availableamount.png')",
         connectwallet: "url('/assets/images/connectwallet.png')",
+        input1: "url('/assets/images/input1.png')",
         becomeanearlyinvestor: "url('/assets/images/becomeanearlyinvestor.png')",
         thestabletoken_horizontal: "url('/assets/images/thestabletoken_horizontal.png')",
         thestabletoken_vertical: "url('/assets/images/thestabletoken_vertical.png')",

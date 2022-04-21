@@ -120,3 +120,132 @@
     background-color: rgba(0, 0, 0, 0.1);
   }
 }
+
+.tabs-component {
+  background-image: url(/assets/images/back1.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+
+
+.tabs-component [role="tablist"] {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.tabs-component [role="tablist"] button {
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  display: block;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin: 0 1px;
+  outline: none;
+  background-color: transparent;
+  transition: border 0.2s ease-in-out 0s;
+  font-weight: 100;
+  font-family: "Outline Pixel7 Solid";
+  font-size: x-large;
+}
+
+.tabs-component [role="tablist"] button:first-child {
+  border-right-width: 1px;
+  border-right-color: rgb(255, 202, 8);
+}
+
+.tabs-component [role="tablist"] button:last-child {
+  border-left-width: 1px;
+  border-left-color: rgb(255, 202, 8);
+}
+
+.tabs-component [role="tablist"] button.active,
+.tabs-component [role="tablist"] button:focus,
+.tabs-component [role="tablist"] button:hover {
+  font-weight: bold;
+}
+
+.tabs-component [role="tablist"] button.active {
+  font-weight: bold;
+}
+
+.tabs-component [role="tabpanel"] {
+  text-align: left;
+  padding: 3rem;
+  background-image: url(/assets/images/back1.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+
+.tabs-component [role="tabpanel"] h3 {
+  font-family: "Small Pixel7";
+  text-transform: capitalize;
+  font-size: x-large;
+}
+
+.tabs-component.vertical {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.tabs-component.vertical [role="tablist"] {
+  flex-direction: column;
+}
+
+.tabs-component.vertical [role="tabpanel"] {
+  flex: 1;
+}
+
+.tabs-component [role="tablist"] button {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin: 0;
+}
+
+.tabs-component.vertical [role="tablist"] button.active,
+.tabs-component.vertical [role="tablist"] button:focus,
+.tabs-component.vertical [role="tablist"] button:hover {
+  border-color: #e9ecef transparent #e9ecef #b41c1c;
+}
+
+
+.tabs-component [role="tabpanel"] input {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  outline: 0;
+  font-family: "Small Pixel7";
+  font-size: 20px;
+  padding-left: 20px;
+  position: relative;
+  /* background-color: rgb(216, 160, 100); */
+  border: solid rgb(216, 160, 100) 3px;
+  box-shadow: 0 1px 2px #666, 0 -1px 1px rgb(188 148 4 / 20%), inset 0 1px 1px rgb(0 0 0 / 40%), inset 0 -1px 1px rgb(255 255 255 / 70%);
+  -moz-box-shadow: 0 1px 2px #666, 0 -1px 1px rgb(188 148 4 / 20%), inset 0 1px 1px rgb(0 0 0 / 40%), inset 0 -1px 1px rgb(255 255 255 / 70%);
+  -webkit-box-shadow: 0 1px 2px #666, 0 -1px 1px rgb(188 148 4 / 20%), inset 0 1px 1px rgb(0 0 0 / 40%), inset 0 -1px 1px rgb(255 255 255 / 70%);
+}
+
+.tabs-component [role="tabpanel"] input::placeholder {
+  color: white;
+}
+
+.tabs-component [role="tabpanel"] button {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  outline: 0;
+  font-family: "Small Pixel7";
+  font-size: 20px;
+  position: relative;
+  background: rgb(219, 163, 100);
+  border: solid white 3px;
+  
+}
