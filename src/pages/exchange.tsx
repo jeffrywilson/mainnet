@@ -19,7 +19,7 @@ const tabs: TabsType = [
 ];
 
 export default function Exchange() {
-  const [selectedTab, setSelectedTab] = useState<number>(tabs[0].index);
+  const [selectedTab, setSelectedTab] = useState<number>(1);
   
   return (
     <Layout>

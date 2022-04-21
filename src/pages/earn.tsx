@@ -32,7 +32,7 @@ const tabs: TabsType = [
 
 
 export default function Earn() {
-  const [selectedTab, setSelectedTab] = useState<number>(tabs[0].index);
+  const [selectedTab, setSelectedTab] = useState<number>(1);
   
   return (
     <Layout>
