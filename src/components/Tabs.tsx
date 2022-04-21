@@ -35,7 +35,7 @@ const Tabs: FC<TabsProps> = ({
     } else if (tabs.length === 3) {
       setBasis("basis-1/3");
     } else {
-      setBasis("basis-1");
+      setBasis("w-full");
     }
   }, []);
 

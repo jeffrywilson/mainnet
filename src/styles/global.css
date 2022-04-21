@@ -157,12 +157,12 @@
 
 .tabs-component [role="tablist"] button:first-child {
   border-right-width: 1px;
-  border-right-color: rgb(255, 202, 8);
+  border-right-color: rgb(226 187 139);
 }
 
 .tabs-component [role="tablist"] button:last-child {
   border-left-width: 1px;
-  border-left-color: rgb(255, 202, 8);
+  border-left-color: rgb(226 187 139);
 }
 
 .tabs-component [role="tablist"] button.active,
