@@ -28,6 +28,14 @@ const BorrowTab: FC<{}> = () => {
           </button>
         </div>
       </div>
+
+      <div className="bottomPanel bg-[#5a442c] pt-3 !top-[200px]">
+        <div className="flex flex-row justify-center">
+          <p className="basis-1/3">{`BORROW LIMIT:`}</p>
+          <p className="basis-1/3">{`LIQUIDITY:`}</p>
+          <p className="basis-1/3">{`YOUR WALLET:`}</p>
+        </div>
+      </div>
     </Fragment>
   );
 };

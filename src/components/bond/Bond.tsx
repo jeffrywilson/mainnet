@@ -32,6 +32,14 @@ const Bond: FC<{}> = () => {
         </div>
       </div>
 
+      <div className="bottomPanel bg-[#5a442c] !top-[200px]">
+        <p>{`Dicsount:`}</p>
+        <div className="flex flex-row justify-center">
+          <p className="basis-1/5">{`APY:`}</p>
+          <p className="basis-2/5">{`LIQUIDITY:`}</p>
+          <p className="basis-2/5">{`YOUR WALLET:`}</p>
+        </div>
+      </div>
     </Fragment>
   );
 };
