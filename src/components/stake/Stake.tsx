@@ -6,7 +6,7 @@ const Stake: FC<{}> = () => {
       <div className="mb-5">
         <h3>Deposit</h3>
         <div className="flex flex-row">
-          <select name="deposit" className="basis-1/4">
+          <select name="deposit" className="deposit basis-1/4">
             <option value="USDT">USDT</option>
             <option value="USDC">USDC</option>
             <option value="DAI">DAI</option>

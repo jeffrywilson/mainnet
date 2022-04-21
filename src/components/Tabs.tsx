@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, useState, useEffect } from "react";
 
 type TabsProps = {
   tabs: {
@@ -28,6 +28,16 @@ const Tabs: FC<TabsProps> = ({
   orientation = "horizontal"
 }) => {
   const Panel = tabs && tabs.find((tab) => tab.index === selectedTab);
+  const [basis, setBasis] = useState<string>();
+  useEffect(()=>{
+    if(tabs.length === 2) {
+      setBasis("basis-1/2");
+    } else if (tabs.length === 3) {
+      setBasis("basis-1/3");
+    } else {
+      setBasis("basis-1");
+    }
+  }, []);
 
   return (
     <div
@@ -38,7 +48,7 @@ const Tabs: FC<TabsProps> = ({
       <div role="tablist" aria-orientation={orientation} className="pt-2">
         {tabs.map((tab) => (
           <button
-            className={selectedTab === tab.index ? "active basis-1/3" : "basis-1/3"}
+            className={selectedTab === tab.index ? `active ${basis}` : `${basis}`}
             onClick={() => onClick(tab.index)}
             key={tab.index}
             type="button"
