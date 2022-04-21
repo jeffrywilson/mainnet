@@ -23,7 +23,7 @@ export default function Exchange() {
   
   return (
     <Layout>
-      <div className="relative min-h-screen mt-20">
+      <div className="relative min-h-screen">
         <Tabs selectedTab={selectedTab} onClick={setSelectedTab} tabs={tabs} />
       </div>
     </Layout>
